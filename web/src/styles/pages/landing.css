@@ -14,19 +14,15 @@
 #page-landing .content-wrapper{
   position: relative;
 
-  /* largura max */
   width: 100%;
   max-width: 1100px;
 
-  /* altura max */
   height: 100%;
   max-height: 660px;
 
   display: flex;
   align-items: flex-start;
-  /* Elementos na vertical */
   flex-direction: column;
-  /* espaçamento entre os filhos  */
   justify-content: space-between;
 
   background: url('../../images/landing.svg') no-repeat 80% center ;
