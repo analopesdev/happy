@@ -1,5 +1,8 @@
 import express, { request } from 'express';
 
+// Fazer com que o servidor responda a conexão
+import './database/connection'
+
 const app = express();
 
 app.use(express.json());
