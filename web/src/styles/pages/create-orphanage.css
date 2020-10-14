@@ -84,6 +84,9 @@ form.create-orphanage-form .input-block + .input-block {
   margin-top: 24px;
 }
 
+form.create-orphanage-form .input-block label[for="name"]{
+  padding-top: 20px;
+}
 form.create-orphanage-form .input-block label {
   display: flex;
   color: #8FA7B3;
@@ -184,3 +187,8 @@ form.create-orphanage-form button.confirm-button svg {
 form.create-orphanage-form button.confirm-button:hover {
   background: #36CF82;
 }
+
+.leaflet-container{
+  border-radius: 0px;
+}
+
