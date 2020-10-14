@@ -9,9 +9,8 @@ export class createOrphanages1602621441386 implements MigrationInterface {
         columns:[
           {
             name: 'id',
-            // Inteiro
             type: 'integer',
-            // Aceitar somente numeros positivos
+            // Aceitar somente números positivos
             unsigned: true,
             // Chave primaria
             isPrimary: true,

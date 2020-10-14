@@ -35,7 +35,7 @@ export class createImages1602638439682 implements MigrationInterface {
                 columnNames:['orphanage_id'],
 
                 // Qual tabela, na tabela de orphanage que ela está relacionamento
-                referencedTableName: 'orphanage',
+                referencedTableName: 'orphanages',
 
                 // Qual coluna, na tabela de orphanage que ela está relacionamento
                 referencedColumnNames: ['id'],
