@@ -33,15 +33,12 @@ Este projeto foi construído durante a terceira edição do evento Next Level We
 
 <h3>🚀 Web </h3>
 
-![WhatsApp-Video-2020-10-15-at-13 35 02](https://user-images.githubusercontent.com/54561217/96159960-b2838800-0eeb-11eb-9e3e-1178a57eaaea.gif)
----
+<h1 align="center">
+<img src="./assets/gif-ana.gif" width="400" height="400" />
+</h1>
 
-### Deploy 
-🚀 Happy - 
 
----
 ## 🍃 Rotas do Backend
-
 
 GET - http://localhost:3333/orphanages --> Lista todos os orfanatos <br>
 GET - http://localhost:3333/orphanages/:id --> Lista um orfanato<br>
