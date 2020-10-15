@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from "react";
-// import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo} from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import { useParams} from 'react-router-dom'
+
 import '../styles/pages/orphanage.css';
+
 import Sidebar from "../components/Sidebar";
 import mapIcon from "../utils/mapIcon";
+
 import api from '../services/api';
 
 interface Orphanage {
@@ -21,7 +23,6 @@ interface Orphanage {
     id: number;
   }>;
 }
-
 interface OrphanageParams{
   id: string;
 }
@@ -30,6 +31,7 @@ export default function Orphanage() {
   const params = useParams<OrphanageParams>()
   const [orphanage, setOrphanage] = useState<Orphanage>();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+
   useEffect(() => {
     api.get(`orphanages/${params.id}`).then(response => {
       setOrphanage(response.data);
@@ -41,7 +43,7 @@ export default function Orphanage() {
   }
   return (
     <div id="page-orphanage">
-     <Sidebar/>
+      <Sidebar/>
       <main>
         <div className="orphanage-details">
           <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name} />
@@ -116,11 +118,6 @@ export default function Orphanage() {
               </div>
               )}
             </div>
-
-            {/* <button type="button" className="contact-button">
-              <FaWhatsapp size={20} color="#FFF" />
-              Entrar em contato
-            </button> */}
           </div>
         </div>
       </main>
