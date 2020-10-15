@@ -34,7 +34,7 @@ Este projeto foi construído durante a terceira edição do evento Next Level We
 <h3>🚀 Web </h3>
 
 <h1>
-<img src="./assets/gif-ana.gif" width="700" height="400" />
+<img src="./assets/gif-ana.gif" width="400" height="400" />
 </h1>
 
 
